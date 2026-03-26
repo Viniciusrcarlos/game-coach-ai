@@ -1,0 +1,111 @@
+{
+  "info": {
+    "name": "Game Coach API",
+    "description": "Coach de jogos especializado powered by GPT-4.1 mini",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": [""]
+        },
+        "description": "Verifica se a API está online"
+      }
+    },
+    {
+      "name": "Beginner - Coach para iniciantes",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Como melhorar minha mira no jogo?\",\n  \"game\": \"Valorant\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/beginner",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["beginner"]
+        },
+        "description": "Dicas simples e encorajadoras para jogadores iniciantes"
+      }
+    },
+    {
+      "name": "Advanced - Coach para jogadores avançados",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Como melhorar minha rotação no mapa?\",\n  \"game\": \"Valorant\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/advanced",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["advanced"]
+        },
+        "description": "Estratégias avançadas e meta-game para jogadores competitivos"
+      }
+    },
+    {
+      "name": "Trustable - Coach 100% confiável (kkk)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"message\": \"Qual a melhor estratégia para ganhar sempre?\",\n  \"game\": \"CS2\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/trustable",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["trustable"]
+        },
+        "description": "Um coach que nunca jogou nada na vida, não faz ideia do que fala, mas age com confiança absurda e inabalável (kkk)"
+      }
+    }
+  ]
+}
